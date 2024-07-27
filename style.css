@@ -1,0 +1,103 @@
+* {
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: "Plain Light";
+color: white;
+/* background-color: #0B0B0B; */
+}
+
+html,body {
+height: 100%;
+width: 100%;
+}
+
+#loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: #0B0B0B;
+    padding: 25vh 12vw;
+}
+
+.line{
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2vw;
+}
+.line h2{
+    font-size: 5vw;
+    text-transform: uppercase;
+    opacity: 0;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+}
+@keyframes anime {
+    0%{
+        font-family: "plain light";
+        -webkit-text-stroke: 1px white;
+        font-weight: 300;
+        color: white;
+        opacity: 1;
+    }
+    48%{
+        font-family: "plain light";
+        -webkit-text-stroke: 1px white;
+        font-weight: 300;
+        color: white;
+        opacity: 0;
+    }
+    50%{
+        font-family: "silk serif";
+        -webkit-text-stroke: 0.5px white;
+        font-weight: 100;
+        color: transparent;
+        opacity: 1;
+    }
+    100%{
+        font-family: "silk serif";
+        -webkit-text-stroke: 0.5px white;
+        font-weight: 100;
+        color: transparent;
+        opacity: 0;
+    }
+}
+#linepart1{  
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1vw;
+    margin-left: 6vw;
+}
+#linepart1 h5,#linepart1 h6{
+    font-family: "silk serif";
+    font-size: 3vw;
+    font-weight: 100;
+    overflow: hidden;
+    text-align: center;
+}
+#linepart1 h6{
+    width: 8vw;
+}
+#linepart1 h5{
+    width: 6vw;
+    text-align: center;
+}
+.line h1{
+    font-size: 6.5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+#main{
+    position: relative;
+    background-color: #000000;
+}
+
+#page1{
+    height: 100vh;
+    background-color: #1f1f1f;
+}
