@@ -101,7 +101,6 @@ function curser(){
     });
     
 }
-
 function shreyAnimation(){
     Shery.imageEffect(".image-div",{
         style: 4,
@@ -211,9 +210,28 @@ function shreyAnimation(){
             flag = 0
         }
     })   
+
+    document.addEventListener("mousemove",function(dets){
+        gsap.to("#flag",{
+            x : dets.x,
+            y : dets.y
+        })
+    })
+    document.querySelector("#heroline").addEventListener("mouseenter",function(){
+        gsap.to("#flag",{
+            display: "initial",
+            opacity: 1,
+        })
+    })
+    document.querySelector("#heroline").addEventListener("mouseleave",function(){
+        gsap.to("#flag",{
+            display: "none",
+            opacity: 0,
+        })
+    })
+    Shery.makeMagnet("#part2 h5",{});
 }
 
-Shery.makeMagnet("#part2 h5",{});
 LoadingAnimation();
 curser();
 ScrollAnimation();

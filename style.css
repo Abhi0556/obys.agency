@@ -204,12 +204,22 @@ width: 100%;
 #heroline h1{
     border-bottom: 0.5vw solid white;
     letter-spacing: 5px;
+    z-index: 99;
 }
 #heroline h1:hover{
-    -webkit-text-stroke: 2px rgb(207, 204, 204);
+    -webkit-text-stroke: 2px rgb(252, 252, 252);
     color: transparent;
     border-bottom: transparent;
     font-weight: 100;
+}
+#flag{
+    position: absolute;
+    height: 29vw;
+    top: -28%;
+    left: -10%;
+    transform: translate(-50%,-50%);
+    display: none;
+    opacity: 0;
 }
 
 
@@ -218,6 +228,7 @@ width: 100%;
     position: relative;
     background-color: #151515;
     height: 100vh;
+    margin-top: 50px;
 }
 #part-2{
     width: 70%;
@@ -282,6 +293,17 @@ width: 100%;
     width: 71.1vw;
     margin-left: 28%;
     margin-top: 3vw;
+    position: relative;
+    overflow: hidden;
+}
+#head-1 h1::before{
+    content: "02";
+    font-size: 3vw;
+    font-family: "silk serif";
+    font-weight: 300;
+    position: absolute;
+    left: -10%;
+    top: 12%;
 }
 #page3 .underline{
     border: 1px solid white;
