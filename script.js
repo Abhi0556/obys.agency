@@ -107,7 +107,7 @@ function shreyAnimation(){
                 opacity:0
             })
             gsap.to("#vid-curser",{
-                x: dets.x - 1570,
+                x: dets.x - 1200,
                 y: dets.y - 130
             })
         })
