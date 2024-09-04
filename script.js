@@ -31,7 +31,7 @@ function ScrollAnimation(){
 function LoadingAnimation(){
     var t1= gsap.timeline()
     t1.from(".line h1",{
-    y: +150,
+    y: +300,
     stagger: 0.25,
     duration: 0.6,
     delay: 0.2,
